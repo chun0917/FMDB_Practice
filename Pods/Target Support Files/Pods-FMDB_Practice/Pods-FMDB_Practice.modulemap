@@ -1,0 +1,6 @@
+framework module Pods_FMDB_Practice {
+  umbrella header "Pods-FMDB_Practice-umbrella.h"
+
+  export *
+  module * { export * }
+}

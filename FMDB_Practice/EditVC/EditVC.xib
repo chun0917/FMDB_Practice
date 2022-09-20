@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditVC" customModule="FMDB_Practice" customModuleProvider="target">
+            <connections>
+                <outlet property="ageTextField" destination="UL3-Nj-KJc" id="0LR-aC-inJ"/>
+                <outlet property="nameTextField" destination="VCo-YL-vkc" id="6MW-qH-5dV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年齡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gND-Zj-Zoq">
+                    <rect key="frame" x="87" y="199" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Fuo-kQ-4nq"/>
+                        <constraint firstAttribute="height" constant="40" id="eUQ-q9-z2u"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VCo-YL-vkc">
+                    <rect key="frame" x="132" y="144" width="150" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="elS-y8-6sI"/>
+                        <constraint firstAttribute="width" constant="150" id="wat-Zw-bHJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sL3-cp-a4c">
+                    <rect key="frame" x="167" y="259" width="80" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="TMS-Hb-4ON"/>
+                        <constraint firstAttribute="height" constant="40" id="Z4y-Vc-hnV"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="修改"/>
+                    <connections>
+                        <action selector="updateData:" destination="-1" eventType="touchUpInside" id="0cn-0o-d4d"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UL3-Nj-KJc">
+                    <rect key="frame" x="132" y="199" width="150" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1xG-jW-R7L"/>
+                        <constraint firstAttribute="width" constant="150" id="Qgd-0Q-Maf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ra-nk-TNK">
+                    <rect key="frame" x="87" y="144" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="FdD-Xf-Ase"/>
+                        <constraint firstAttribute="height" constant="40" id="j8n-M3-7t4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="sL3-cp-a4c" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="64g-Ko-S2c"/>
+                <constraint firstItem="VCo-YL-vkc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="8ri-S9-Eou"/>
+                <constraint firstItem="VCo-YL-vkc" firstAttribute="leading" secondItem="9Ra-nk-TNK" secondAttribute="trailing" constant="5" id="9c3-kL-XkI"/>
+                <constraint firstItem="gND-Zj-Zoq" firstAttribute="top" secondItem="9Ra-nk-TNK" secondAttribute="bottom" constant="15" id="Byg-y3-NLd"/>
+                <constraint firstItem="UL3-Nj-KJc" firstAttribute="leading" secondItem="gND-Zj-Zoq" secondAttribute="trailing" constant="5" id="Q86-xO-gz6"/>
+                <constraint firstItem="sL3-cp-a4c" firstAttribute="top" secondItem="UL3-Nj-KJc" secondAttribute="bottom" constant="20" id="SgV-ux-Xld"/>
+                <constraint firstItem="UL3-Nj-KJc" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="dQW-FH-PgG"/>
+                <constraint firstItem="UL3-Nj-KJc" firstAttribute="top" secondItem="VCo-YL-vkc" secondAttribute="bottom" constant="15" id="jgW-B1-Ujb"/>
+                <constraint firstItem="VCo-YL-vkc" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="kP1-Rk-eGM"/>
+                <constraint firstItem="9Ra-nk-TNK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="q18-uq-ua9"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="63"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
